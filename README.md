@@ -2,6 +2,35 @@
 Challenge Assignment for Neural Networks
 
 ////////////////////////////////////////////
+Nural Network Model Report
+////////////////////////////////////////////
+
+Overview:
+--------------------------------------------
+Overview of the analysis: Explain the purpose of this analysis.
+
+Results:
+--------------------------------------------
+Results: Using bulleted lists and images to support your answers, address the following questions:
+
+Data Preprocessing
+
+    What variable(s) are the target(s) for your model?
+    What variable(s) are the features for your model?
+    What variable(s) should be removed from the input data because they are neither targets nor features?
+
+Compiling, Training, and Evaluating the Model
+
+    How many neurons, layers, and activation functions did you select for your neural network model, and why?
+    Were you able to achieve the target model performance?
+    What steps did you take in your attempts to increase model performance?
+
+Summary:
+--------------------------------------------
+Summary: Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and then explain your recommendation.
+
+
+////////////////////////////////////////////
 Sources for Code
 ////////////////////////////////////////////
 
@@ -20,6 +49,10 @@ The folowing data sources were used according to sample_data readme:
     and our copy was prepared by the vega_datasets library."
 
 Specific sections directly using sources listed below:
+
+--------------------------------------------------
+Deep_Leaning_Code.ipynb
+--------------------------------------------------
 
 --------------------------------------------------
 Setup 
@@ -81,3 +114,35 @@ and:
     # Evaluate the model using the test data
     model_loss, model_accuracy = nn.evaluate(X_test_scaled,y_test,verbose=2)
     print(f"Loss: {model_loss}, Accuracy: {model_accuracy}")
+
+The following code:
+
+    # Compile the model
+    nn.compile(loss="binary_crossentropy", optimizer="adam",metrics=["accuaracy"])
+
+and:
+
+    # Train the model
+    it_nn = nn.fit(X_train_scaled, y_train, epochs=100)
+
+Were from W21_Class2_Activities 01-Ins-Over_the_Moon_NN.ipynb
+
+The method of saving the model:
+
+    nn.save("applicatn_sucess_model1.HDF5")
+
+Was from:
+
+    https://machinelearningmastery.com/save-load-keras-deep-learning-models/
+
+
+--------------------------------------------------
+Deep Learning Optimization.ipynb
+--------------------------------------------------
+
+Used a copy of the Deep_Leaning_Code.ipynb as the base for this file so as not to repeat myself.
+
+Please see section on Deep_Leaning_Code.ipynb for referenced code.
+
+Any addtionally referenced code listed below:
+
