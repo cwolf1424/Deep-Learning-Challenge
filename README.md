@@ -1,34 +1,6 @@
 # Deep-Learning-Challenge
 Challenge Assignment for Neural Networks
 
-////////////////////////////////////////////
-Nural Network Model Report
-////////////////////////////////////////////
-
-Overview:
---------------------------------------------
-Overview of the analysis: Explain the purpose of this analysis.
-
-Results:
---------------------------------------------
-Results: Using bulleted lists and images to support your answers, address the following questions:
-
-Data Preprocessing
-
-    What variable(s) are the target(s) for your model?
-    What variable(s) are the features for your model?
-    What variable(s) should be removed from the input data because they are neither targets nor features?
-
-Compiling, Training, and Evaluating the Model
-
-    How many neurons, layers, and activation functions did you select for your neural network model, and why?
-    Were you able to achieve the target model performance?
-    What steps did you take in your attempts to increase model performance?
-
-Summary:
---------------------------------------------
-Summary: Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and then explain your recommendation.
-
 
 ////////////////////////////////////////////
 Sources for Code
@@ -129,11 +101,13 @@ Were from W21_Class2_Activities 01-Ins-Over_the_Moon_NN.ipynb
 
 The method of saving the model:
 
-    nn.save("applicatn_sucess_model1.HDF5")
+    nn.save("/content/drive/MyDrive/Colab Notebooks/AlphabetSoupCharity.HDF5")
 
 Was from:
 
     https://machinelearningmastery.com/save-load-keras-deep-learning-models/
+
+    with additional help from Benjamin Alford, professor, on linking drive.
 
 
 --------------------------------------------------
@@ -145,4 +119,10 @@ Used a copy of the Deep_Leaning_Code.ipynb as the base for this file so as not t
 Please see section on Deep_Leaning_Code.ipynb for referenced code.
 
 Any addtionally referenced code listed below:
+
+The method of PCA using a % Variance instead of a number came from the following source:
+
+    https://mikulskibartosz.name/pca-how-to-choose-the-number-of-components
+
+    
 
